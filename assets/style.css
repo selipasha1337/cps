@@ -1,0 +1,259 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "TT Lakes", sans-serif;
+  min-width: 320px;
+  max-width: 1121px;
+  margin: 0 auto;
+  background: #F8F8F8;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 16px;
+}
+
+.header__actions {
+  display: flex;
+}
+
+.header__actions:last-child .header__item:first-child {
+  margin-right: 42px;
+}
+
+.main-title {
+  margin-top: 24px;
+  margin-left: 16px;
+}
+
+.header__item {
+  display: flex;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #FF3E79;
+}
+
+.header__text {
+  margin-right: 9px;
+  font-weight: 500;
+}
+
+.header__logo-container {
+  position: relative;
+}
+
+.header__logo-container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  width: 2px;
+  height: 32px;
+  background: #EAEAEA;
+  top: 10px;
+  right: -16px;
+}
+
+.main-title {
+  position: relative;
+}
+
+.main-title::before {
+  content: '';
+  position: absolute;
+  background: #41F6D7;
+  width: 4px;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  top: -2px;
+  left: -16px;
+}
+
+@media (min-width: 320px) {
+  .header-main {
+    display: block;
+    margin-top: 0;
+  }
+
+  .header__text {
+    display: none;
+  }
+
+  .header {
+    background: #ffffff;
+  }
+
+  .header__actions:first-child .header__button:first-child  {
+    margin-right: 16px;
+  }
+
+  .header__actions:last-child .header__item:first-child {
+    display: none;
+  }
+
+  .header__actions:last-child .header__item  .header__button {
+    margin-right: 16px;
+  }
+
+  .header__actions:last-child .header__item  .header__button:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 784px) {
+  .header {
+    padding: 19px 24px;
+  }
+
+  .main-title {
+    margin-left: 24px;
+  }
+
+  .header__actions:last-child .header__item:first-child {
+    display: flex;
+  }
+
+  .header__actions:last-child .header__item:first-child .header__button:last-child {
+    position: relative;
+  }
+  
+  .header__actions:last-child .header__item:first-child .header__button:last-child::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: #EAEAEA;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    right: -20px;
+  }
+
+  .header__logo-container {
+    margin-left: 24px;
+  }
+
+  .header__logo-container::after {
+    display: none;
+  }
+
+  .header__logo-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 1px;
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+    top: 10px;
+    left: -20px;
+  }
+
+  .main-title::before {
+    left: -24px;
+  }
+
+}
+
+@media (min-width: 1121px) {
+  .header-main {
+    display: flex;
+    margin-top: 42px;
+  }
+
+  .header {
+    background: none;
+    padding: 0;
+  }
+
+  .main-title {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .header__text {
+    display: flex;
+  }
+
+  .header__actions:last-child .header__item:first-child {
+    display: none;
+  }
+
+  .header__actions:first-child {
+    display: none;
+  }
+
+  .header__actions:last-child .header__item:last-child .header__button {
+    margin-right: 32px;
+  }
+
+  .header__actions:last-child .header__item .header__button:last-child {
+    margin-right: 0;
+  }
+
+  .main-title::before {
+    left: -32px;
+    border-radius: 4px;
+  }
+}
+
+
+
