@@ -11,9 +11,10 @@
   <title>CPS</title>
 </head>
 <body>
+<div class="overlay"></div>
 <aside class="sidebar">
   <div class="sidebar__container">
-    <div class="sidebar__actions">
+    <div class="sidebar__navigation-block">
       <header class="sidebar__header">
         <button class="main-button sidebar__header-button">
             <span class="main-button__icon">
@@ -31,59 +32,73 @@
           </span>
         </button>
       </header>
-      <ul class="sidebar__list">
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link sidebar__link--active">Ремонт техники</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link">Услуги и сервисы</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link">Корпоративным клиентам</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link">Продавцам техники</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link">Партнерам</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link">Производителям</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link">Наши сервисные центры</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="" class="sidebar__link">Контакты</a>
-        </li>
-      </ul>
+      <nav class="sidebar__navigation">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link sidebar__link--active">Ремонт техники</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link">Услуги и сервисы</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link">Корпоративным клиентам</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link">Продавцам техники</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link">Партнерам</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link">Производителям</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link">Наши сервисные центры</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="" class="sidebar__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="sidebar__actions">
+    <div class="sidebar__navigation-block">
       <footer class="sidebar__footer">
-        <div class="sidebar__footer-icons">
-          <button class="main-button sidebar__footer-button">
+        <ul class="sidebar__footer-icons">
+          <li class="sidebar__footer-icon">
+            <button class="main-button sidebar__footer-button">
             <span class="main-button__icon">
             <img src="assets/images/phone.svg" alt="Телефон" class="main-icon__img">
           </span>
-          </button>
-          <button class="main-button sidebar__footer-button">
+            </button>
+          </li>
+          <li class="sidebar__footer-icon">
+            <button class="main-button sidebar__footer-button">
             <span class="main-button__icon">
             <img src="assets/images/message.svg" alt="Сообщение" class="main-icon__img">
           </span>
-          </button>
-          <button class="main-button sidebar__footer-button">
+            </button>
+          </li>
+          <li class="sidebar__footer-icon">
+            <button class="main-button sidebar__footer-button">
             <span class="main-button__icon">
             <img src="assets/images/profile.svg" alt="Профиль" class="main-icon__img">
           </span>
-          </button>
-        </div>
+            </button>
+          </li>
+        </ul>
         <a href="mailto:mail@cps.com" class="sidebar__email">mail@cps.com</a>
         <a href="tel:88008908900" class="sidebar__phone">8 800 890 8900</a>
-        <div class="sidebar__languages">
-          <button class="sidebar__language sidebar__language--active">RU</button>
-          <button class="sidebar__language">EN</button>
-          <button class="sidebar__language">CH</button>
-        </div>
+        <ul class="sidebar__languages">
+          <li class="sidebar__language-item">
+            <button class="sidebar__language sidebar__language--active">RU</button>
+          </li>
+          <li class="sidebar__language-item">
+            <button class="sidebar__language">EN</button>
+          </li>
+          <li class="sidebar__language-item">
+            <button class="sidebar__language">CH</button>
+          </li>
+        </ul>
       </footer>
     </div>
   </div>

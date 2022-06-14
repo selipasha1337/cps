@@ -212,11 +212,11 @@ h1 {
   left: 0;
 }
 
-.sidebar__container {
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px;
+  min-width: 320px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -248,6 +248,7 @@ h1 {
 }
 
 .sidebar__link {
+  height: 100%;
   position: relative;
   font-weight: 500;
   color: #1B1C21;
@@ -266,7 +267,7 @@ h1 {
   display: flex;
 }
 
-.sidebar__footer-button:not(:last-child) {
+.sidebar__footer-icon:not(:last-child) {
   margin-right: 16px;
 }
 
@@ -324,10 +325,17 @@ h1 {
   color: #7E7E82;
 }
 
-.sidebar__language:not(:last-child) {
+.sidebar__language-item:not(:last-child) {
   margin-right: 7px;
 }
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  filter: blur(24px);
+  background: #ccc;
+  z-index: -1;
+}
 
 @media (min-width: 320px) {
   .header-main {
