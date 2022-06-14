@@ -11,102 +11,82 @@
   <title>CPS</title>
 </head>
 <body>
-
-<div class="header-main">
-  <div class="header-main__item">
-    <div class="header">
-      <div class="header__actions">
-        <div class="header__item">
-          <button class="header__button">
-            <span class="header__icon-container">
-            <img src="assets/images/menu.svg" alt="Меню" class="header__icon">
+<aside class="sidebar">
+  <div class="sidebar__container">
+    <div class="sidebar__actions">
+      <header class="sidebar__header">
+        <button class="main-button sidebar__header-button">
+            <span class="main-button__icon">
+            <img src="assets/images/close.svg" alt="Закрыть" class="main-icon__img">
+          </span>
+        </button>
+        <button class="main-button sidebar__header-button">
+            <span class="logo">
+            <img src="assets/images/logo.svg" alt="Логотип" class="logo__img">
+          </span>
+        </button>
+        <button class="main-button sidebar__header-button">
+            <span class="main-button__icon">
+            <img src="assets/images/search-nav.svg" alt="Меню" class="main-icon__img">
+          </span>
+        </button>
+      </header>
+      <ul class="sidebar__list">
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link sidebar__link--active">Ремонт техники</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link">Услуги и сервисы</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link">Корпоративным клиентам</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link">Продавцам техники</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link">Партнерам</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link">Производителям</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link">Наши сервисные центры</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="" class="sidebar__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar__actions">
+      <footer class="sidebar__footer">
+        <div class="sidebar__footer-icons">
+          <button class="main-button sidebar__footer-button">
+            <span class="main-button__icon">
+            <img src="assets/images/phone.svg" alt="Телефон" class="main-icon__img">
           </span>
           </button>
-          <button class="header__button">
-            <span class="header__logo-container">
-            <img src="assets/images/logo.svg" alt="Логотип" class="header__logo">
+          <button class="main-button sidebar__footer-button">
+            <span class="main-button__icon">
+            <img src="assets/images/message.svg" alt="Сообщение" class="main-icon__img">
+          </span>
+          </button>
+          <button class="main-button sidebar__footer-button">
+            <span class="main-button__icon">
+            <img src="assets/images/profile.svg" alt="Профиль" class="main-icon__img">
           </span>
           </button>
         </div>
-      </div>
-      <div class="header__actions">
-        <div class="header__item">
-          <button class="header__button">
-            <span class="header__icon-container">
-              <img src="assets/images/profile.svg" alt="Профиль" class="header__icon">
-            </span>
-          </button>
-          <button class="header__button">
-            <span class="header__icon-container">
-            <img src="assets/images/message.svg" alt="Сообщение" class="header__icon">
-          </span>
-          </button>
-          <button class="header__button">
-            <span class="header__icon-container">
-            <img src="assets/images/phone.svg" alt="Телефон" class="header__icon">
-          </span>
-          </button>
+        <a href="mailto:mail@cps.com" class="sidebar__email">mail@cps.com</a>
+        <a href="tel:88008908900" class="sidebar__phone">8 800 890 8900</a>
+        <div class="sidebar__languages">
+          <button class="sidebar__language sidebar__language--active">RU</button>
+          <button class="sidebar__language">EN</button>
+          <button class="sidebar__language">CH</button>
         </div>
-        <div class="header__item">
-          <button class="header__button">
-            <span class="header__text">Оставить заявку</span>
-            <span class="header__icon-container">
-            <img src="assets/images/settings.svg" alt="Оставить заявку" class="header__icon">
-          </span>
-          </button>
-          <button class="header__button">
-            <span class="header__text">Статус ремонта</span>
-            <span class="header__icon-container">
-            <img src="assets/images/search.svg" alt="Оставить заявку" class="header__icon">
-          </span>
-          </button>
-        </div>
-      </div>
+      </footer>
     </div>
   </div>
-  <div class="header-main__item">
-    <h1 class="main-title">Услуги и сервисы</h1>
-  </div>
-</div>
-<nav class="menu">
-  <ul class="menu__list">
-    <li class="menu__item">
-      <button class="menu__button menu__button--active">Ремонтируемые устройства</button>
-    </li>
-    <li class="menu__item">
-      <button class="menu__button">Дополнительные услуги</button>
-    </li>
-    <li class="menu__item">
-      <button class="menu__button">Ремонтируемые устройства</button>
-    </li>
-    <li class="menu__item">
-      <button class="menu__button">Цены на услуги</button>
-    </li>
-    <li class="menu__item">
-      <button class="menu__button">Адреса сервисных центров</button>
-    </li>
-    <li class="menu__item">
-      <button class="menu__button">Специальные цены</button>
-    </li>
-    <li class="menu__item">
-      <button class="menu__button">Отзывы</button>
-    </li>
-  </ul>
-</nav>
-<div class="about">
-  <div class="about__item">
-    <p class="about__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-      отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-    <p class="about__p">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-      большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
-      советуют нас родным и близким.</p>
-    <button class="about__button more">Читать далее</button>
-  </div>
-  <div class="about__item">
-    <div class="about__image-container">
-      <img src="assets/images/cpspic.jpg" alt="О CPS" class="about__image">
-    </div>
-  </div>
-</div>
+</aside>
 </body>
 </html>
