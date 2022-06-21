@@ -421,11 +421,10 @@ h2 {
   height: 12px;
   margin-top: 40px;
   background: #B5B6BC;
-
 }
 
 .swiper-horizontal > .swiper-pagination-bullets {
-  bottom: -4px !important;
+  bottom: -4px;
 }
 
 .brands__action {

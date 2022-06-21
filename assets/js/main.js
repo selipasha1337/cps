@@ -53,7 +53,6 @@ window.addEventListener('load', function() {
 });
 
 window.addEventListener('resize', function() {
-  swiperMode();
   if (docWidth >= 1121) {
     brandsRange = 8;
   }
