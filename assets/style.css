@@ -47,6 +47,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 .header-main {
   display: flex;
   flex-direction: row-reverse;
@@ -185,7 +189,6 @@ h1 {
   position: relative;
   font-weight: 500;
   color: #1B1C21;
-  padding-left: 20px;
 }
 
 .about__item:last-child {
@@ -202,7 +205,11 @@ h1 {
   object-fit: cover;
 }
 
-.more::before {
+.about__button {
+  padding-left: 20px;
+}
+
+.about__button::before {
   content: '';
   background: url("images/more.svg") no-repeat;
   position: absolute;
@@ -344,11 +351,35 @@ h1 {
 .services__title {
   color: #7E7E82;
   font-weight: 400;
-  padding: 0 16px;
+  padding: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
-.slider {
-  margin-top: 32px;
+.brands__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 24px;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+
+.brand__slider {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.brand__swiper {
+  height: 100px;
+}
+
+.brand:hover {
+  opacity: .8;
+}
+
+.brand--hidden {
+  display: none;
 }
 
 .brand__container {
@@ -357,8 +388,8 @@ h1 {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
-  padding: 16px 20px;
-  margin-left: 16px;
+  padding: 0 20px;
+  height: 72px;
 }
 
 .brand__button {
@@ -378,12 +409,49 @@ h1 {
 
 .brand__button-img {
   position: absolute;
-  left: 19px;
+  left: 17px;
 }
 
-.slider__brand {
-  width: 100%;
-  height: 120px;
+.brands__wrapper {
+  margin: 16px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin-top: 40px;
+  background: #B5B6BC;
+
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -4px !important;
+}
+
+.brands__action {
+  margin-top: 24px;
+  margin-left: 24px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.brands__action::before {
+  content: '';
+  background: url("images/more.svg") no-repeat;
+  position: absolute;
+  bottom: 3px;
+  width: 8px;
+  height: 11px;
+  left: 0;
+  transition: transform .3s;
+}
+
+.brands__action--clicked::before {
+  transition: transform .3s;
+}
+
+.brands__action--clicked::before {
+  transform: rotate(-180deg);
 }
 
 @media (min-width: 320px) {
@@ -414,6 +482,14 @@ h1 {
 
   .header__actions:last-child .header__item .header__button:last-child {
     margin-right: 0;
+  }
+
+  .brands__wrapper {
+    display: none;
+  }
+
+  .brands__action {
+    display: none;
   }
 }
 
@@ -497,17 +573,20 @@ h1 {
   }
 
   .services__title {
-    padding: 0 24px;
+    padding: 16px 24px;
+    background: linear-gradient(-90deg, #F8F8F8 1.39%, #FFFFFF 100%);
   }
 
-  .brand__container {
-    margin-left: 24px;
+  .brands__wrapper {
+    margin: 24px;
   }
 
-
-
-  .slider {
-    margin-top: 40px;
+  .brand__slider {
+    display: none;
+  }
+  
+  .brands__wrapper {
+    display: grid;
   }
 }
 
@@ -570,12 +649,20 @@ h1 {
   }
 
   .services__title {
-    padding: 0 32px;
+    padding: 16px 32px;
+    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
   }
 
-  .brand__container {
+  .brands__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 24px 32px;
+    gap: 16px 32px;
+  }
+
+  .brands__action {
     margin-left: 32px;
   }
+
 }
 
 
