@@ -51,14 +51,14 @@ h2 {
   margin: 0;
 }
 
-.header-main {
+.header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
 }
 
-.header {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   padding: 19px 16px;
@@ -475,7 +475,7 @@ h2 {
 }
 
 @media (min-width: 320px) {
-  .header-main {
+  .header {
     display: block;
     margin-top: 0;
   }
@@ -616,7 +616,7 @@ h2 {
 }
 
 @media (min-width: 1121px) {
-  .header-main {
+  .header {
     display: flex;
     margin-top: 42px;
   }
